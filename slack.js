@@ -3,7 +3,6 @@ const socketIO = require('socket.io');
 const namespace = require('./data/namespaces');
 const app = express();
 
-// console.log(namespace[0]);
 app.use(express.static(__dirname + '/public'));
 
 const server = app.listen(9000);
