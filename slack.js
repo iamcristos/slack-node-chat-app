@@ -8,7 +8,8 @@ app.use(express.static(__dirname + '/public'));
 app.get('/', (req, res) =>{
     res.send('Hello')
 })
-const server = app.listen(9000);
+const PORT = process.env.PORT || 9000
+const server = app.listen(PORT);
 
 const io = socketIO(server);
 
